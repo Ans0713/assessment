@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Prevents scroll bars from appearing */
+}
+
+/* App Container */
+.App {
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px; /* Slightly larger border radius */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Adjusted width for a more compact look */
+  padding: 30px;
+  margin: 20px;
+  position: relative;
+}
+
+/* Logo Styles */
+.App-logo {
+  height: 20vmin;
+  pointer-events: none;
+  animation: App-logo-spin 15s linear infinite;
+  margin-bottom: 20px;
+}
+
+/* Header Styles */
+.App-header {
+  background-color: #1d1f22; /* Darker header background */
+  color: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px; /* Space between header and content */
+}
+
+/* Main Content Styles */
+.App-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Text Styles */
+.App-header h1 {
+  font-size: 2rem; /* Adjusted font size for header */
+  margin: 0;
+  color: #e0e0e0; /* Slightly lighter text color */
+}
+
+.App-header p {
+  font-size: 1rem;
+  color: #b0b0b0; /* Light gray color for text */
+  margin: 10px 0;
+}
+
+/* Link Styles */
+.App-link {
+  color: #4a90e2; /* Soft blue color */
+  text-decoration: none;
+  font-weight: 600; /* Semi-bold text */
+  transition: color 0.3s ease;
+}
+
+.App-link:hover {
+  color: #357abd; /* Darker blue on hover */
+  text-decoration: underline;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff; /* Bright blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px; /* Adds space around each button */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+button:active {
+  transform: scale(0.98); /* Slight scale-down effect on click */
+}
+
+/* Additional Styling for Inputs (Optional) */
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  border-color: #007bff; /* Blue border on focus */
+  outline: none;
+}
