@@ -1,148 +1,141 @@
-/* General Styles */
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #e9ecef; /* Slightly darker gray background */
+  background-color: #e9ecef; 
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden; /* Prevents scroll bars from appearing */
-  background-image: linear-gradient(to right, #e9ecef, #f0f2f5); /* Gradient background */
+  overflow: hidden; 
+  background-image: linear-gradient(to right, #e9ecef, #f0f2f5);
 }
 
-/* App Container */
 .App {
   text-align: center;
-  background-color: #ffffff; /* White background for the app */
-  border-radius: 16px; /* More rounded corners */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow for a modern look */
-  width: 85%; /* Adjusted width for a more compact design */
-  max-width: 700px; /* Slightly wider max-width */
-  padding: 30px; /* Increased padding for a spacious design */
+  background-color: #ffffff; 
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); 
+  width: 85%; 
+  max-width: 700px; 
+  padding: 30px; 
   margin: 20px;
   position: relative;
 }
 
-
-/* Header Styles */
 .App-header {
-  background-color: #343a40; /* Darker header background for contrast */
-  color: #ffffff; /* White text color */
-  padding: 25px 20px; /* Adjusted padding for a balanced look */
-  border-radius: 16px; /* Matching rounded corners */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Deeper shadow for depth */
-  margin-bottom: 25px; /* Space between header and content */
+  background-color: #343a40; 
+  color: #ffffff; 
+  padding: 25px 20px; 
+  border-radius: 16px; 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); 
+  margin-bottom: 25px;
 }
 
-/* Main Content Styles */
 .App-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px; /* Added gap between elements */
+  gap: 20px; 
 }
 
-/* Text Styles */
 .App-header h1 {
-  font-size: 2rem; /* Larger font size for the header */
+  font-size: 2rem;
   margin: 0;
-  color: #f8f9fa; /* Very light gray for header text */
-  font-weight: 700; /* Bolder font weight */
+  color: #f8f9fa;
+  font-weight: 700; 
 }
 
 .App-header p {
-  font-size: 1rem; /* Slightly larger font size for text */
-  color: #ced4da; /* Lighter gray color for paragraph text */
-  margin: 10px 0; /* Vertical spacing */
+  font-size: 1rem; 
+  color: #ced4da; 
+  margin: 10px 0; 
 }
 
-/* Link Styles */
+
 .App-link {
-  color: #007bff; /* Primary blue color */
+  color: #007bff; 
   text-decoration: none;
-  font-weight: 600; /* Semi-bold text */
-  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+  font-weight: 600; 
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 .App-link:hover {
-  color: #0056b3; /* Darker blue on hover */
-  text-decoration: underline; /* Underline on hover */
+  color: #0056b3; 
+  text-decoration: underline; 
 }
 
-/* Button Styles */
 button {
-  background-color: #28a745; /* Fresh green background */
-  color: #ffffff; /* White text color */
+  background-color: #28a745; 
+  color: #ffffff; 
   border: none;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
   padding: 14px 28px;
-  font-size: 1.125rem; /* Larger button font size */
-  cursor: pointer; /* Pointer cursor on hover */
-  margin: 12px; /* Space around buttons */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  font-size: 1.125rem; 
+  cursor: pointer;
+  margin: 12px; 
+  transition: background-color 0.3s ease, transform 0.2s ease; 
 }
 
 button:hover {
-  background-color: #218838; /* Darker green on hover */
+  background-color: #218838; 
 }
 
 button:active {
-  transform: scale(0.95); /* Slight scale-down effect on click */
+  transform: scale(0.95); 
 }
 
-/* Additional Styling for Inputs */
 input[type="text"], input[type="email"], textarea {
-  width: 100%; /* Full width */
+  width: 100%; 
   padding: 14px;
-  border: 1px solid #ced4da; /* Light gray border */
-  border-radius: 8px; /* Rounded corners */
-  font-size: 1rem; /* Standard font size */
-  margin-top: 12px; /* Space above inputs */
-  box-sizing: border-box; /* Include padding in width calculation */
-  background-color: #ffffff; /* White background for inputs */
+  border: 1px solid #ced4da; 
+  border-radius: 8px; 
+  font-size: 1rem; 
+  margin-top: 12px;
+  box-sizing: border-box; 
+  background-color: #ffffff; 
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-  border-color: #28a745; /* Green border on focus */
-  outline: none; /* Remove default outline */
+  border-color: #28a745; 
+  outline: none; 
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
   .App {
-    padding: 20px; /* Adjust padding for smaller screens */
-    width: 90%; /* Adjust width for better responsiveness */
+    padding: 20px;
+    width: 90%; 
   }
 
   .App-header h1 {
-    font-size: 1.75rem; /* Adjust header font size */
+    font-size: 1.75rem;
   }
 
   .App-header p {
-    font-size: 0.875rem; /* Adjust text font size */
+    font-size: 0.875rem;
   }
 }
 
 @media (max-width: 480px) {
   .App {
-    padding: 15px; /* Further adjust padding for very small screens */
-    width: 100%; /* Maximize width for very small screens */
+    padding: 15px; 
+    width: 100%; 
     right: 10%;
   }
 
   .App-header h1 {
-    font-size: 1.5rem; /* Adjust header font size */
+    font-size: 1.5rem; 
   }
 
   .App-header p {
-    font-size: 0.75rem; /* Adjust text font size */
+    font-size: 0.75rem; 
   }
 
   button {
-    padding: 12px 22px; /* Adjust button padding */
-    font-size: 0.875rem; /* Adjust button font size */
+    padding: 12px 22px; 
+    font-size: 0.875rem; 
   }
 }
 

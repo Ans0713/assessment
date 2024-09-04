@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useLocalStorage } from '../hooks/useLocalStorage'; // Custom hook for local storage
+import { useLocalStorage } from '../hooks/useLocalStorage'; 
 import Question from './Question';
 import ThankYou from './ThankYou';
 
